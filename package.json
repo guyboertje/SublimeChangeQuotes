@@ -1,16 +1,16 @@
 {
   "name": "ChangeQuotes",
-  "description": "Converts single to double or double to single quotes.  Attempts to preserve correct escaping, though this could be improved I'm sure.",
-  "author": "Colin T.A. Gray (colinta)",
-  "details": "https://github.com/colinta/SublimeChangeQuotes",
+  "description": "Forked from (https://github.com/colinta/SublimeChangeQuotes) Converts single to double or double to single quotes.  Attempts to preserve correct escaping, though this could be improved I'm sure.",
+  "author": "Guy Boertje (guyboertje) + colinta",
+  "details": "https://github.com/guyboertje/SublimeChangeQuotes",
   "labels": ["text manipulation"],
   "releases": [
     {
-      "details": "https://github.com/colinta/SublimeChangeQuotes/tree/st2",
+      "details": "https://github.com/guyboertje/SublimeChangeQuotes/tree/st2",
       "sublime_text": "<3000"
     },
     {
-      "details": "https://github.com/colinta/SublimeChangeQuotes/tags",
+      "details": "https://github.com/guyboertje/SublimeChangeQuotes/tags",
       "sublime_text": ">=3000"
     }
   ]

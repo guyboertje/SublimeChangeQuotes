@@ -40,6 +40,15 @@ CHANGE_QUOTE = {
     u'»': u'›',
 }
 
+class ChangeToSymbolCommand(sublime_plugin.TextCommand):
+    def run(self, edit, **kwargs):
+        v = self.view
+        pt = v.sel()[0]
+        region = v.expand_by_class(pt,
+                sublime.CLASS_WORD_START | sublime.CLASS_WORD_END)
+        source = v.substr(region)
+        repl = ":{0}".format(source)
+        v.replace(edit, region, repl)
 
 class ChangeQuotesCommand(sublime_plugin.TextCommand):
     def run(self, edit, **kwargs):
